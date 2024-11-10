@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicaciones de Inteligencia Artificial">
+    <title>Aplicaciones de Inteligencia Artificial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header del sitio web -->
+    <header>
+        <h1>Aplicaciones de Inteligencia Artificial</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reloj en Tiempo Real -->
+    <div class="reloj">
+        <span id="horas">00:</span>
+        <span id="minutos">00:</span>
+        <span id="segundos">00</span>
+    </div>
+
+    <!-- Botones para cambiar el fondo y tamaño de fuente -->
+    <section id="inicio">
+        <h2>Interacciones</h2>
+        <button onclick="cambiarFondo()">Cambiar fondo</button>
+        <button onclick="colorAleatorio()">Fondo aleatorio</button>
+        <button onclick="gradiente()">Fondo gradiente</button>
+        <button onclick="aumentarFuente()">Aumentar tamaño</button>
+        <button onclick="disminuirFuente()">Disminuir tamaño</button>
+
+        <!-- Selector de colores manuales -->
+        <div class="color-selector">
+            <label for="colorFondo">Color de fondo:</label>
+            <input type="color" id="colorFondo" name="colorFondo">
+            <label for="colorTexto">Color de texto:</label>
+            <input type="color" id="colorTexto" name="colorTexto">
+            <button onclick="aplicarColoresManual()">Aplicar colores</button>
+        </div>
+
+        <p>Este es un ejemplo de texto cuyo tamaño de fuente será modificado.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur doloremque odio officiis saepe cupiditate,
+            assumenda quaerat! Et itaque debitis ratione possimus maiores, placeat magni recusandae rem corporis
+            repudiandae, cumque eligendi.</p>
+    </section>
+
+    <!-- Sección de aplicaciones -->
+    <section id="aplicaciones">
+        <h2>Aplicaciones de la Inteligencia Artificial</h2>
+        <article>
+            <h3>Salud</h3>
+            <p>La IA está revolucionando el diagnóstico y tratamiento en el ámbito médico.</p>
+        </article>
+        <article>
+            <h3>Automoción</h3>
+            <p>Los vehículos autónomos utilizan IA para mejorar la seguridad y la eficiencia en el transporte.</p>
+        </article>
+        <article>
+            <h3>Finanzas</h3>
+            <p>La IA permite predecir tendencias y optimizar las inversiones financieras.</p>
+        </article>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Fernando Sotelo, 2024 Aplicaciones de IA. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script de funciones de interacción -->
+    <script src="script.js"></script>
+</body>
+</html>
